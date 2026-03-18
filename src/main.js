@@ -1,38 +1,11 @@
-function isEven(value) {
-    if (Number.isInteger(value)) {
-        return !(value % 2);
-    }
+import { isEven, isOdd, isPrime, max } from "./lib/math";
 
-    return false;
-}
+// console.log(isEven(3));
+// console.log(isOdd(3));
+// console.log(max(42, 3));
 
-function isOdd(value) {
-    if (Number.isInteger(value)) {
-        return !isEven(value);
-    }
 
-    return false;
-}
-
-function max(...values) {
-    if (values.length === 0) {
-        return NaN;
-    }
-
-    let i = 0;
-    let result = NaN;
-    for (; i < values.length; i++) {
-        if (!isNaN(values[i])) {
-            result = values[i];
-            break;
-        }
-    }
-
-    for (i = i + 1; i < values.length; i++) {
-        if (!isNaN(values[i]) && values[i] > result) {
-            result = values[i];
-        }
-    }
-
-    return isNaN(result) ? NaN : result;
-}
+// console.log(isPrime(1));
+// console.log(isPrime(3));
+// console.log(isPrime(13));
+console.log(isPrime(64939905515519));

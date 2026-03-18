@@ -1,4 +1,5 @@
 import { isEven, isOdd, isPrime, max } from "./lib/math";
+import {arrayReverse} from "./lib/array";
 
 // console.log(isEven(3));
 // console.log(isOdd(3));
@@ -8,4 +9,6 @@ import { isEven, isOdd, isPrime, max } from "./lib/math";
 // console.log(isPrime(1));
 // console.log(isPrime(3));
 // console.log(isPrime(13));
-console.log(isPrime(64939905515519));
+// console.log(isPrime(64939905515519));
+
+console.log(arrayReverse([]));
